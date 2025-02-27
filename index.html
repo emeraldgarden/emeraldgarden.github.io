@@ -59,57 +59,59 @@
         <title>Emerald Garden - Gardening Tips, DIY & Sustainable Growing</title>
     </head>
 	<body>
-        <div class="bg-light nav-bg sticky-top">
+        <div class="nav-bg sticky-top" id="navbar">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand mobile-view" href="#"><span>Emerald Garden</span></a>
-                    <div class="collapse navbar-collapse navbar-Toggler" id="navbarTogglerDemo03">
-                        <div class="desktop-view">
-                            <a class="navbar-brand" href="https://emeraldgarden.github.io/"><span>Emerald Garden</span></a>
-                        </div>
-                        <div>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://emeraldgarden.github.io/contact.html">Contact</a>
-                                </li>
-                            </ul>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand mobile-view" href="#"><span>Emerald Garden</span></a>
+                        <div class="collapse navbar-collapse navbar-Toggler" id="navbarTogglerDemo03">
+                            <div class="desktop-view">
+                                <a class="navbar-brand" href="https://emeraldgarden.github.io/"><span>Emerald Garden</span></a>
+                            </div>
+                            <div>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#blog">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://emeraldgarden.github.io/contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </nav>
             </div>
         </div>
         <!-- End of Nav Section -->
          <!--Slider Section Start-->
-         <div id="zoomCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/1200x600" class="d-block w-100" alt="Slide 1">
+         <section class="slider-css">
+            <div id="zoomCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1461243040904-d4e8c1d56b66?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://emeraldgarden.github.io/Images/vegetables-that-can-grow-indoors-without-sunlight.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://emeraldgarden.github.io/Images/best-soil-for-vegetable-gardens.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x600/ff7f7f" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x600/77ff7f" class="d-block w-100" alt="Slide 3">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#zoomCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#zoomCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#zoomCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#zoomCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </div>
+        </section>
         <!--Slider Section End-->
         <!--About Section Start-->
         <section class="container">
@@ -271,5 +273,16 @@
 
         <!-- JavaScript -->
         <script src="myscripts.js"></script>
+        
+        <script>
+            window.addEventListener("scroll", function() {
+                var navbar = document.getElementById("navbar");
+                if (window.scrollY === 0) {
+                    navbar.classList.remove("scrolled"); // Transparent & Absolute at the top
+                } else {
+                    navbar.classList.add("scrolled"); // Fixed & Solid on scroll
+                }
+            });
+        </script>
     </body>
 </html>
