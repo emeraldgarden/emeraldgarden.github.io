@@ -134,7 +134,9 @@ figcaption.text-center {
     font-weight: bold;
 }
 p.card-text-welcome {
-    font-size: 20px;
+    font-size: 19px;
+    text-align: justify;
+    padding: 0 18px;
 }
 div#customNavbar {
     /*display: flex;*/
