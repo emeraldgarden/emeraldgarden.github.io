@@ -72,7 +72,7 @@ margin: 5px 0;
 }
 ul.list-unstyled li a:hover {
 text-decoration: underline;
-background: #ccc;
+color: #0779e4;
 }
 ul.ref-link li a{
     text-decoration: none;
@@ -111,12 +111,15 @@ padding: 15px 10px;
     align-items: center;
 }
 .card-img {
-    padding: 10% 0;
+    padding: 10% 0 1% 0;
 }
 .card-img img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+.answer {
+    margin-bottom: 20px;
 }
 a.btn.bg-primary {
     color: #fff;
