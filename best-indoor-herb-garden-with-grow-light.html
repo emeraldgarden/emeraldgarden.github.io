@@ -72,38 +72,9 @@
 	
 	<body>
 		<!-- Navbar Section Start-->
-		<div class="bg-light nav-bgs sticky-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand mobile-view" href="#"><span>Emerald Garden</span></a>
-                    <div class="collapse navbar-collapse navbar-Toggler" id="navbarTogglerDemo03">
-                        <div class="desktop-view">
-                            <a class="navbar-brand" href="https://emeraldgarden.github.io/"><span>Emerald Garden</span></a>
-                        </div>
-                        <div>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://emeraldgarden.github.io/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://emeraldgarden.github.io/#blog">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://emeraldgarden.github.io/contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </nav>
-            </div>
-        </div>
+		<div class="bg-light nav-bgs sticky-top" id="navbar-container-page"></div> 
 		<!-- Navbar Section End-->
-
+        <!-- Content Section Start-->
 		<div class="container wrap">
 			<div class="row">
 				<article class="col-sm-8 single-post">
@@ -202,54 +173,34 @@
 			</div>
 		</div>
         
-		<!-- Footer Section -->
-        <footer class="bg-dark text-light py-4">
-            <div class="container">
-                <div class="row pt-5">
-                    <!-- About Us -->
-                    <div class="col-md-3">
-                        <h4>About Us</h4>
-                        <p>Welcome to <strong>Emerald Garden</strong>, your go-to source for expert gardening tips, plant care guides, and home gardening inspiration.</p>
-                    </div>
-        
-                    <!-- Quick Links -->
-                    <div class="col-md-3">
-                        <h4>Quick Links</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="https://emeraldgarden.github.io/about.html" class="text-light">About</a></li>
-                            <li><a href="https://emeraldgarden.github.io/#blog" class="text-light">Blog</a></li>
-                            <li><a href="https://emeraldgarden.github.io/contact.html" class="text-light">Contact</a></li>
-                            <li><a href="https://emeraldgarden.github.io/privacy-policy.html" class="text-light">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-        
-                    <!-- Social Media -->
-                    <div class="col-md-3">
-                        <h4>Follow Us</h4>
-                        <a href="https://facebook.com/aemeraldgarden" class="text-light me-2" target="_blank">Facebook</a> |
-                        <a href="https://medium.com/@emeraldgarden" class="text-light me-2" target="_blank">Medium</a>
-                    </div>
-        
-                    <!-- Newsletter -->
-                    <div class="col-md-3">
-                        <h4>Subscribe to Our Newsletter</h4>
-                        <p>Get the latest gardening tips and updates straight to your inbox.</p>
-                        <form action="#" method="post">
-                            <div class="input-group">
-                                <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
-                                <button type="submit" class="btn btn-success">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <hr>
-                <!-- Footer Bottom -->
-                <div class="text-center mt-4">
-                    <p class="mb-0">© <strong>Emerald Garden</strong>. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-		<!-- End of Footer Section -->
+        <!-- Footer Section -->
+        <script>
+            // Function to load navbar and footer
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar-container").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
+                
+                fetch("page-navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar-container-page").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
+
+                fetch("footer.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the footer:", error));
+            });
+        </script>
+        <div id="footer-container"></div>
+        <!-- End of Footer Section -->
         <!-- Scroll to Top Button -->
         <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
 
