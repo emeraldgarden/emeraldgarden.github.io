@@ -173,6 +173,21 @@
                         document.getElementById("navbar-container-page").innerHTML = data;
                     })
                     .catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("related-post.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("relatedpost-container-page").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
+
+                
+                fetch("sidebar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("sidebar-container-page").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
 
                 fetch("footer.html")
                     .then(response => response.text())

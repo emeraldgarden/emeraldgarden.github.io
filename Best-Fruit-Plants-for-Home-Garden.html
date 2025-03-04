@@ -203,21 +203,7 @@
                         </div>
                     </div>
                 </article>
-                
-                <aside class="bd-sidebar col-sm-4 text-center">
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-img">
-                                <img class="card-img-top" src="https://emeraldgarden.github.io/Images/emerald-garden.png" alt="Emerald Garden">
-                            </div>
-                        <div class="card-body">
-                            <h2 class="card-title text-center"><strong>Emerald Garden</strong></h2>
-                            <p class="card-text-welcome">Welcome to Emerald Garden, a blog dedicated to gardening, plant care, and eco-friendly living. Whether you're a beginner or an expert, you'll find gardening tips, plant guides, DIY projects, and sustainable farming techniques that will help your garden thrive.</p>
-                            <a href="https://emeraldgarden.github.io/#blog" class="btn btn-primary">See More</a>
-                        </div>
-                        </div>
-                    </div> 
-                </aside>
+                <aside id="sidebar-container-page" class="bd-sidebar col-sm-4 text-center"></aside>
             </div>
         </div>
         
@@ -236,6 +222,21 @@
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById("navbar-container-page").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("related-post.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("relatedpost-container-page").innerHTML = data;
+                    })
+                    .catch(error => console.error("Error loading the navbar:", error));
+
+                
+                fetch("sidebar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("sidebar-container-page").innerHTML = data;
                     })
                     .catch(error => console.error("Error loading the navbar:", error));
 

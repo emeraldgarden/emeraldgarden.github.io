@@ -1,0 +1,100 @@
+<style>
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding:0px;
+    }
+    .card {
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .img-sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .card-body{
+        padding:0 5px;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.375rem;
+        transition: all 0.15s ease-in-out;
+        text-decoration: none;
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
+    .btn-primary:focus, .btn-primary:active {
+        background-color: #0a58ca;
+        border-color: #0a53be;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+    }
+    .d-flex {
+        display: flex !important;
+    }
+    .justify-content-center {
+        justify-content: center !important;
+    }
+
+
+</style>
+
+<section>
+    <div class="cards">
+        <div class="card">
+            <img src="https://emeraldgarden.github.io/Images/Best-Fruit-Plants-for-Home-Garden.jpg" class="img-sidebar" alt="Best Fruit Plants">
+            <div class="card-body">
+                <h3 class="card-title">Best Fruit Plants for Home Garden</h3>
+                <p class="card-text">Enjoy fresh fruit from your own garden...</p>
+                <a href="https://emeraldgarden.github.io/Best-Fruit-Plants-for-Home-Garden.html" class="btn btn-primary d-flex justify-content-center">Read More</a>
+            </div>
+        </div>
+        <!--div class="card">
+            <img src="https://emeraldgarden.github.io/Images/vegetables-that-can-grow-indoors-without-sunlight.jpg" class="img-sidebar" alt="Vegetables Indoors">
+            <div class="card-body">
+                <h5 class="card-title">Vegetables that Can Grow Indoors Without Sunlight</h5>
+                <p class="card-text">Grow vegetables inside your home...</p>
+                <a href="https://emeraldgarden.github.io/vegetables-that-can-grow-indoors-without-sunlight.html" class="btn btn-primary d-flex justify-content-center">Read More</a>
+            </div>
+        </div-->
+        <!--div class="card">
+            <img src="https://emeraldgarden.github.io/Images/best-soil-for-vegetable-gardens.jpg" class="img-sidebar" alt="Best Soil">
+            <div class="card-body">
+                <h5 class="card-title">Best Soil for Vegetable Gardens</h5>
+                <p class="card-text">Learn about the best soil for your vegetables...</p>
+                <a href="https://emeraldgarden.github.io/best-soil-for-vegetable-gardens.html" class="btn btn-primary d-flex justify-content-center">Read More</a>
+            </div>
+        </div-->
+    </div>
+</section>
+
+<!--script>
+    function sendHeight() {
+        const height = document.documentElement.scrollHeight;
+        parent.postMessage(height, "*");
+    }
+
+    window.onload = sendHeight;
+    window.onresize = sendHeight;
+</script-->
