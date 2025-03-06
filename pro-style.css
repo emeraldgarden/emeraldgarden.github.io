@@ -291,7 +291,8 @@ figcaption {
 }
 .post-body ul li, .post-body ol li {
     font-size: 20px;
-    margin: 5px 0;
+    margin: 20px 0;
+    text-align: justify;
 }
 ul li {
     font-size: 20px;
@@ -304,6 +305,9 @@ ol li {
 pre {
     background: #ccc;
     color: #000;
+}
+.related-post-li ul li {
+    margin: 5px 0;
 }
 .article-sd h3 {
     padding: 0 5px;
