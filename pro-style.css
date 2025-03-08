@@ -294,6 +294,9 @@ figcaption {
     margin: 20px 0;
     text-align: justify;
 }
+.bodybg {
+    background: #fff;
+}
 ul li {
     font-size: 20px;
     margin: 5px 0;
@@ -311,6 +314,9 @@ pre {
 }
 .article-sd h3 {
     padding: 0 5px;
+}
+.postimg img {
+    padding: 10px 5px;
 }
 .skillsnothers h2 {
     border-bottom: 1px solid #ccc;
