@@ -196,6 +196,12 @@ img.model-logo {
     width: 100%;
     overflow: hidden;
 }
+.blog-heading span {
+    border-bottom: 5px solid #0d6efd;
+}
+.latest-post-item h5, .latest-post-item p {
+    text-align: justify;
+}
 a.btn.btn-class {
     border: 1px solid #ccc;
     margin: 10px 0;
