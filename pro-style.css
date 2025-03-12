@@ -199,6 +199,11 @@ img.model-logo {
 .blog-heading span {
     border-bottom: 5px solid #0d6efd;
 }
+.bg-relpost {
+    padding: 2% 2%;
+    background: #e3e3e3;
+    border-radius: 5px;
+}
 .latest-post-item h5, .latest-post-item p {
     text-align: justify;
 }
