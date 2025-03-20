@@ -10,6 +10,10 @@ body {
     margin: auto;
     overflow: hidden;
 }
+.cont-wrap {
+    width: 80%;
+    margin: auto;
+}
 header {
     background: #333;
     color: #fff;
@@ -628,6 +632,12 @@ figure.Portfolioimg {
 }
 /*blog html css End*/
 
+/*Responsive blog css Start*/
+@media screen and (max-width: 980px) {
+    .cont-wrap {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     header nav {
         float: none;

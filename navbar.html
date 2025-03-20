@@ -1,6 +1,6 @@
 <!-- End of Nav Section -->
 <div class="nav-bg sticky-top" id="navbar">
-    <div class="container">
+    <div class="cont-wrap">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,9 +16,14 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Blog</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/flower.html" target="_blank" rel="noopener noreferrer">Flower</a></li>
+                                        <li><a class="dropdown-item" href="/fruit.html" target="_blank" rel="noopener noreferrer">Fruit</a></li>
+                                        <li><a class="dropdown-item" href="/vegetable.html" target="_blank" rel="noopener noreferrer">Vegetable</a></li>
+                                    </ul>
+                                </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://emeraldgarden.github.io/gardening-tool-crossword-clue-game.html" target="_blank" rel="noopener noreferrer">Free Game</a>
                             </li>
