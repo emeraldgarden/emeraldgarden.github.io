@@ -6,12 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 .container {
-    width: 80%;
     margin: auto;
     overflow: hidden;
+    padding:0 5%;
 }
-.cont-wrap {
-    width: 80%;
+.cont-wrap,.wrap {
+    padding:0 5%;
     margin: auto;
 }
 header {
