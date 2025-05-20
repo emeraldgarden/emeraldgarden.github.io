@@ -253,6 +253,10 @@ figcaption {
 .content h2 {
     padding: 10px 0;
 }
+tr, th, td { 
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
 .github-stats img {
     max-width: 100%;
     height: auto;
