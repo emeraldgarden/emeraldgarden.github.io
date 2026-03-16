@@ -319,10 +319,14 @@ tr, th, td {
 .article-list p {
     text-align: justify;
 }
+.post-body ul, .post-body ol {
+    padding-left: 20px;
+}
 .post-body ul li, .post-body ol li {
-    font-size: 20px;
-    margin: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
     text-align: justify;
+    font-family: serif;
 }
 .bodybg {
     background: #fff;
