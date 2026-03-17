@@ -190,11 +190,11 @@ img.model-logo {
     margin: 1% auto;
 }
 .blockquote {
-    border-left: 4px solid #007bff !important;
-    padding-left: 15px !important;
-    margin-left: 20px !important;
-    border-radius: 14px;
-    font-size: 18px;
+    background: var(--color-background-warning);
+    border-left: 4px solid #BA7517 !important;
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
 }
 .blockquote ul li {
     font-size: 18px;
